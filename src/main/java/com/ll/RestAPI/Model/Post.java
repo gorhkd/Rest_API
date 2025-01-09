@@ -1,10 +1,12 @@
 package com.ll.RestAPI.Model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data // getter, setter, toString 등 알아서 다 만들어준다.
+@AllArgsConstructor
 public class Post {
     private String postId;
     private String title;
