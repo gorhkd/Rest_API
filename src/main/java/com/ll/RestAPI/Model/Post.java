@@ -16,17 +16,9 @@ import java.util.UUID;
 @Entity
 public class Post {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID postId;
-
-    @Column(length = 100)
     private String title;
-
-    @Column(columnDefinition = "TEXT")
     private String contents;
-
-    @Column
     private String author;
-
     private LocalDateTime createDateTime;
 }
